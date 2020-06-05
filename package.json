@@ -1,22 +1,18 @@
 {
-  "name": "react-dog",
+  "name": "rblsio-frontend-common-test2",
   "version": "0.1.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
     "dist/*"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codenaz/create-react-package-tutorial"
-  },
   "keywords": [
     "react",
     "dog"
   ],
   "author": {
-    "name": "Nwakwoke Patrick",
-    "email": "patricknwak@gmail.com"
+    "name": "Laurent Kvb",
+    "email": "laurent@rebels.io"
   },
   "license": "MIT",
   "peerDependencies": {
