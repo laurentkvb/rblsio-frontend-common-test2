@@ -3176,7 +3176,7 @@ main {
         if (children != null) {
           let i = children.length;
           while (--i >= 0) sum += children[i].value;
-        } else {
+        } else if (node.data.uid != null) {
           sum = nodes[node.data.uid].renderedLength;
         }
 
@@ -3346,7 +3346,7 @@ main {
     </script>
     <script>
       const chartParameters = {};
-      const data = {"version":1,"tree":{"name":"index.esm.js","children":[{"name":"src","children":[{"name":"lib","children":[{"name":"dog-image.jpeg","uid":"2d5c-0"},{"name":"dog-style.css","uid":"2d5c-2"},{"name":"Dog.js","uid":"2d5c-3"}]}]},{"name":"node_modules","children":[{"name":"style-inject","children":[{"name":"dist","children":[{"name":"style-inject.es.js","uid":"2d5c-1"}]}]}]}]},"nodes":{"2d5c-0":{"renderedLength":7918,"id":"src/lib/dog-image.jpeg"},"2d5c-1":{"renderedLength":636,"id":"node_modules/style-inject/dist/style-inject.es.js"},"2d5c-2":{"renderedLength":91,"id":"src/lib/dog-style.css"},"2d5c-3":{"renderedLength":143,"isEntry":true,"id":"src/lib/Dog.js"},"2d5c-4":{"renderedLength":0,"isExternal":true,"id":"react"}},"links":[{"source":"2d5c-3","target":"2d5c-4"},{"source":"2d5c-3","target":"2d5c-0"},{"source":"2d5c-3","target":"2d5c-2"},{"source":"2d5c-2","target":"2d5c-1"}]};
+      const data = {"version":1,"tree":{"name":"index.esm.js","children":[{"name":"src","children":[{"name":"lib","children":[{"name":"dog-image.jpeg","uid":"8e15-0"},{"name":"dog-style.css","uid":"8e15-2"},{"name":"Dog.js","uid":"8e15-3"}]}]},{"name":"node_modules","children":[{"name":"style-inject","children":[{"name":"dist","children":[{"name":"style-inject.es.js","uid":"8e15-1"}]}]}]}]},"nodes":{"8e15-0":{"renderedLength":7918,"id":"src/lib/dog-image.jpeg"},"8e15-1":{"renderedLength":636,"id":"node_modules/style-inject/dist/style-inject.es.js"},"8e15-2":{"renderedLength":91,"id":"src/lib/dog-style.css"},"8e15-3":{"renderedLength":169,"isEntry":true,"id":"src/lib/Dog.js"},"8e15-4":{"renderedLength":0,"isExternal":true,"id":"react"}},"links":[{"source":"8e15-3","target":"8e15-4"},{"source":"8e15-3","target":"8e15-0"},{"source":"8e15-3","target":"8e15-2"},{"source":"8e15-2","target":"8e15-1"}]};
 
       document.addEventListener('DOMContentLoaded', () => {
         const width = chartParameters.width || window.innerWidth;
